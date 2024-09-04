@@ -9,7 +9,7 @@ int main()
 	int max;
 	int min;
 	
-	printf("Enter array elements\n");
+	printf("Enter 5 array elements\n");
 	for(index = 0 ; index < N ; index++)
 	{
 		scanf("%d",&arr[index]);
@@ -22,16 +22,16 @@ int main()
 	}
 
 	max = arr[0];
-	for(index = 1 ; index < N-1 ; index++)
+	for(index = 1 ; index < N ; index++)
 	{
-		if(arr[index] > arr[index+1])
+		if(arr[index] > max)
 			max = arr[index];
 	}
 	
 	min = arr[0];
-	for(index = 1 ; index < N-1 : index++)
+	for(index = 1 ; index < N ; index++)
 	{
-		if(arr[index] < arr[index+1])
+		if(arr[index] < min)
 			min = arr[index];
 	}
 	
