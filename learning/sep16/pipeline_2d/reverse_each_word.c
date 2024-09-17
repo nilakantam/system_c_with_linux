@@ -26,9 +26,12 @@ int main()
 	printf("The seeprated String:\n");
 	for(index = 0 ; index  < count ; index++)
 	{
-		puts(arr[index]);
+		printf("%s" , arr[index]);
 		free(arr[index]);
+		if(index < count-1)
+			printf("|");
 	}
+	printf("\n");
 	return 0;
 }
 
